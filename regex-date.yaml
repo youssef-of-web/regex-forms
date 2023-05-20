@@ -1,0 +1,14 @@
+Matches a valid date in the format DD/MM/YYYY:
+{ re: /^(0[1-9]|1\d|2\d|3[01])\/(0[1-9]|1[0-2])\/\d{4}$/, label: 'Valid date (DD/MM/YYYY)' }
+
+Matches a valid date in the format MM/DD/YYYY:
+{ re: /^(0[1-9]|1[0-2])\/(0[1-9]|1\d|2\d|3[01])\/\d{4}$/, label: 'Valid date (MM/DD/YYYY)' }
+
+Matches a valid date in the format YYYY-MM-DD:
+{ re: /^\d{4}-(0[1-9]|1[0-2])-([0-2]\d|3[01])$/, label: 'Valid date (YYYY-MM-DD)' }
+
+Matches a valid date in the format DD MMM YYYY (e.g., 12 Jan 2023):
+{ re: /^(0[1-9]|[1-2]\d|3[01]) (Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) \d{4}$/, label: 'Valid date (DD MMM YYYY)' }
+
+Matches a valid date in the format MMM DD, YYYY (e.g., Jan 12, 2023):
+{ re: /^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) (0[1-9]|[1-2]\d|3[01]), \d{4}$/, label: 'Valid date (MMM DD, YYYY)' }

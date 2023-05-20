@@ -1,0 +1,36 @@
+Matches a valid email address:
+{ re: /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/, label: 'Valid email address' }
+
+Matches a valid username (alphanumeric characters and underscores, 3-16 characters):
+{ re: /^[A-Za-z0-9_]{3,16}$/, label: 'Valid username' }
+
+Matches a valid password (at least 8 characters, containing at least one uppercase letter, one lowercase letter, and one digit):
+{ re: /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/, label: 'Valid password' }
+
+Matches a valid phone number (supports various formats, including international):
+{ re: /^\+?[0-9]{1,3}-?[0-9]{3,}-?[0-9]{3,}$/, label: 'Valid phone number' }
+
+Matches a valid URL:
+{ re: /^(http|https):\/\/[\w\-]+(\.[\w\-]+)+([\w\-\.,@?^=%&:\/~\+#]*[\w\-\@?^=%&\/~\+#])?$/, label: 'Valid URL' }
+
+Matches a valid image file extension (supports common formats like JPEG, PNG, GIF):
+{ re: /\.(jpe?g|png|gif)$/, label: 'Valid image file extension' }
+
+Matches a valid credit card expiration date in MM/YYYY format:
+{ re: /^(0[1-9]|1[0-2])\/\d{4}$/, label: 'Valid credit card expiration date' }
+
+Matches a valid US ZIP code (5 digits or 5 digits followed by a hyphen and 4 digits):
+{ re: /^\d{5}(-\d{4})?$/, label: 'Valid US ZIP code' }
+
+Matches a valid numeric input (positive integers or decimals):
+{ re: /^\d*\.?\d+$/, label: 'Valid numeric input' }
+
+Matches a valid URL with optional http/https prefix:
+{ re: /^(https?:\/\/)?[\w\-]+(\.[\w\-]+)+([\w\-\.,@?^=%&:\/~\+#]*[\w\-\@?^=%&\/~\+#])?$/, label: 'Valid URL with optional prefix' }
+
+Matches a valid social security number (SSN) in the format XXX-XX-XXXX:
+{ re: /^\d{3}-\d{2}-\d{4}$/, label: 'Valid Social Security Number (SSN)' }
+
+Matches a valid HTML color code (hexadecimal format with optional #):
+{ re: /^#?([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$/, label: 'Valid HTML color code' }
+

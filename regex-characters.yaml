@@ -1,0 +1,78 @@
+
+Matches any lowercase letter:
+{ re: /[a-z]/, label: 'Includes lowercase letter' },
+
+Matches any uppercase letter:
+{ re: /[A-Z]/, label: 'Includes uppercase letter' },
+
+Matches any special symbol:
+{ re: /[$&+,:;=?@#|'<>.^*()%!-]/, label: 'Includes special symbol' },
+
+Matches any digit (0-9):
+{ re: /\d/, label: 'Includes digit' }
+
+Matches any non-digit character:
+{ re: /\D/, label: 'Includes non-digit character' }
+
+Matches any word character (alphanumeric and underscore):
+{ re: /\w/, label: 'Includes word character' }
+
+Matches any non-word character:
+{ re: /\W/, label: 'Includes non-word character' }
+
+Matches any whitespace character:
+{ re: /\s/, label: 'Includes whitespace character' }
+
+Matches any non-whitespace character:
+{ re: /\S/, label: 'Includes non-whitespace character' }
+
+Matches any lowercase letter or digit:
+{ re: /[a-z0-9]/, label: 'Includes lowercase letter or digit' }
+
+Matches any character except lowercase letters and digits:
+{ re: /[^a-z0-9]/, label: 'Includes character except lowercase letters and digits' }
+
+Matches any uppercase letter or digit:
+{ re: /[A-Z0-9]/, label: 'Includes uppercase letter or digit' }
+
+Matches any character except uppercase letters and digits:
+{ re: /[^A-Z0-9]/, label: 'Includes character except uppercase letters and digits' }
+
+Matches any letter (uppercase or lowercase):
+{ re: /[a-zA-Z]/, label: 'Includes letter' }
+
+Matches any non-letter character:
+{ re: /[^a-zA-Z]/, label: 'Includes non-letter character' }
+
+Matches any alphanumeric character:
+{ re: /[a-zA-Z0-9]/, label: 'Includes alphanumeric character' }
+
+Matches any non-alphanumeric character:
+{ re: /[^a-zA-Z0-9]/, label: 'Includes non-alphanumeric character' }
+
+Matches any character that is a letter, digit, or underscore:
+{ re: /\w/, label: 'Includes word character' }
+
+Matches any character that is not a letter, digit, or underscore:
+{ re: /\W/, label: 'Includes non-word character' }
+
+Matches any whitespace character (space, tab, newline):
+{ re: /\s/, label: 'Includes whitespace character' }
+
+Matches any non-whitespace character:
+{ re: /\S/, label: 'Includes non-whitespace character' }
+
+Matches a valid email address:
+{ re: /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/, label: 'Valid email address' }
+
+Matches a valid URL:
+{ re: /^(http|https):\/\/[\w\-]+(\.[\w\-]+)+([\w\-\.,@?^=%&:\/~\+#]*[\w\-\@?^=%&\/~\+#])?$/, label: 'Valid URL' }
+
+Matches a valid username (consisting of letters, digits, underscores, and hyphens):
+{ re: /^[A-Za-z0-9_-]+$/, label: 'Valid username' }
+
+Matches a valid date in the format YYYY-MM-DD:
+{ re: /^\d{4}-\d{2}-\d{2}$/, label: 'Valid date (YYYY-MM-DD)' }
+
+Matches a valid HTML tag (opening or closing tag):
+{ re: /^<([a-z]+)([^<]+)*(?:>(.*)<\/\1>|\s+\/>)$/, label: 'Valid HTML tag' }

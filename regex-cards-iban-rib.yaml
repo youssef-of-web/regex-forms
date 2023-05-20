@@ -1,0 +1,38 @@
+Matches a valid credit card number (13 to 16 digits):
+{ re: /^\d{13,16}$/, label: 'Valid credit card number' }
+
+Matches a valid Visa card number (13 to 16 digits starting with 4):
+{ re: /^4[0-9]{12}(?:[0-9]{3})?$/, label: 'Valid Visa card number' }
+
+Matches a valid Mastercard number (16 digits starting with 51-55):
+{ re: /^5[1-5][0-9]{14}$/, label: 'Valid Mastercard number' }
+
+Matches a valid American Express card number (15 digits starting with 34 or 37):
+{ re: /^3[47][0-9]{13}$/, label: 'Valid American Express card number' }
+
+Matches a valid Discover card number (16 digits starting with 6011):
+{ re: /^6011[0-9]{12}$/, label: 'Valid Discover card number' }
+
+Matches a valid JCB card number (16 digits starting with 2131 or 1800):
+{ re: /^(?:2131|1800)[0-9]{11}$/, label: 'Valid JCB card number' }
+
+Matches a valid Diners Club card number (14 digits starting with 300-305 or 36 or 38):
+{ re: /^(?:300|301|302|303|304|305|36|38)[0-9]{11}$/, label: 'Valid Diners Club card number' }
+
+Matches a valid Maestro card number (12 to 19 digits):
+{ re: /^(?:5[0678]\d\d|6304|6390|67\d\d)[0-9]{8,15}$/, label: 'Valid Maestro card number' }
+
+Matches a valid UnionPay card number (16 to 19 digits):
+{ re: /^(?:62[0-9]{14,17})$/, label: 'Valid UnionPay card number' }
+
+Matches a valid IBAN (supports both uppercase and lowercase):
+{ re: /^[A-Za-z]{2}\d{2}[A-Za-z0-9]{1,30}$/, label: 'Valid IBAN' }
+
+Matches a valid French RIB (supports both uppercase and lowercase):
+{ re: /^[A-Za-z]{2}\d{5}\d{5}[A-Za-z0-9]{11}\d{2}$/, label: 'Valid French RIB' }
+
+Matches a valid Moroccan RIB (supports both uppercase and lowercase):
+{ re: /^[A-Za-z]{2}\d{2}\d{5}\d{5}[A-Za-z0-9]{2}\d{2}$/, label: 'Valid Moroccan RIB' }
+
+Matches a valid Spanish IBAN (supports both uppercase and lowercase):
+{ re: /^[A-Za-z]{2}\d{2}\d{4}\d{4}\d{1}[A-Za-z0-9]{10}$/, label: 'Valid Spanish IBAN' }
